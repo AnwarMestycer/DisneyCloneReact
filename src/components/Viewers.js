@@ -45,7 +45,12 @@ const Container = styled.div`
   grid-gap: 25px;
   gap: 25px;
   grid-template-columns: repeat(5, minmax(0, 250px));
-  @media (max-width: 760px) {
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, minmax(0, 250px));
+  }
+  
+  @media (max-width: 300px) {
     grid-template-columns: repeat(1, minmax(0, 250px));
   }
 `;
